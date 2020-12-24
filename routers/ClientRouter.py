@@ -10,12 +10,12 @@ from repository import ClientRepository
 router = APIRouter()
 
 
-@router.get("/client/{identification_document}",response_model=ClientOut)
-async def auth_client(identification_document: str, user_session: Session = Depends(get_db)):
-    client = ClientRepository.get_client(user_session, identification_document)
+@router.get("/user/client/{identification_document}", response_model=ClientOut)
+async def auth_client(identification_document: str, client_session: Session = Depends(get_db)):
+    client = ClientRepository.get_client(
+        client_session, identification_document)
     print()
     if client == None:
         raise HTTPException(status_code=404,
                             detail="El cliente no existe")
     return client
-

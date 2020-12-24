@@ -3,8 +3,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Creando Motor y Conexion con la Base de Datos
-#SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgres@localhost:5432/G3M3E10"
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgres@ec2-3-231-48-230.compute-1.amazonaws.com:5432/G3M3E10"
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgres@localhost:5432/G3M3E10"
+#SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgres@ec2-3-231-48-230.compute-1.amazonaws.com:5432/G3M3E10"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
 # Creacion de la Sesion
