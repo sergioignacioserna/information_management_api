@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 
 # Creando Motor y Conexion con la Base de Datos
 #SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgres@localhost:5432/G3M3E10"
-SQLALCHEMY_DATABASE_URL = "postgres://postgres:41330e11c663002166e7c0f48f252d8910f7a9df31d6ed8611424c98e2d466a2@ec2-3-231-48-230.compute-1.amazonaws.com:5432/G3M3E10"
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgres@ec2-3-231-48-230.compute-1.amazonaws.com:5432/G3M3E10"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
 # Creacion de la Sesion
