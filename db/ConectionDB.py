@@ -23,4 +23,5 @@ def get_db():
 
 # Creando Base para la creacion de los modelos
 Base = declarative_base()
-Base.metadata.schema = "gestion_informacion"
+Base.metadata.schema = "public"
+# Base.metadata.schema = "gestion_informacion"
